@@ -1,5 +1,4 @@
 export default function TransactionHistory({transactions}) {
-    console.log(transactions);
     return (
     <table>
         <thead>
@@ -10,13 +9,16 @@ export default function TransactionHistory({transactions}) {
             </tr>
         </thead>
             
-            {transactions.map(({type, amount, currency, id}) => (
-            <tr key={id}>
-                <td>{type}</td>
-                <td>{amount}</td>
-                <td>{currency}</td>
-            </tr>
-        ))}
+            <tbody>
+                {transactions.map(({type, amount, currency, id}) => (
+                <tr key={id}>
+                    <td>{type}</td>
+                    <td>{amount}</td>
+                    <td>{currency}</td>
+                </tr>
+                ))}
+            </tbody>
+        
     </table>
     )
 }
