@@ -5,6 +5,7 @@ import friends from '../FriendList/friends.json'
 import TransactionHistory from '../TransactionHistory/TransactionHistory'
 import transactions from '../TransactionHistory/transactions.json'
 
+
 export default function App() {
     return (
         <>
